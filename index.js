@@ -76,3 +76,44 @@ myCar.model = 'q7';
 
 console.log('original: ', car);
 console.log('new: ', myCar);
+
+
+
+// Exercise 6: Dynamic keys in onjects
+
+// Create an object named userProfile. 
+// Define a variable named propertyName and assign a string to it (like a username, age, or email). 
+// Use propertyName as a dynamic key in userProfile, assigning a relevant value.
+
+// Your code here
+
+const propertyName = 'username';
+
+const userProfile = {
+    [propertyName]: 'returnitems',
+};
+
+console.log(userProfile);
+
+
+
+// Exercise 7: Input and Export
+
+
+
+// Exercise 8: Default parameters
+
+// Create a function that takes two parameters, `noun` and `adjective`, both with the following respective default values:
+
+// 1. `cat`
+
+// 2. `white`
+
+// The function should log a sentence 'The cat is white.' by default. The function should substitute the appropriate parameters when supplied arguments.
+
+// Your code here
+function catFunc(noun = 'cat', adjective = 'white') {
+    console.log('The ' + noun + ' is ' + adjective);
+}
+
+catFunc('dog', 'brown');
