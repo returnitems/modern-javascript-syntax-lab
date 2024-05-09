@@ -117,3 +117,62 @@ function catFunc(noun = 'cat', adjective = 'white') {
 }
 
 catFunc('dog', 'brown');
+
+
+
+// Exercise 9: Ternary operators
+
+// Convert the following `if...else` statement in to a ternary:
+
+let pizza = 'tasty';
+
+// if (pizza === 'tasty') {
+//   console.log('yum');
+// } else {
+//   console.log('yuck');
+// }
+
+// Your code here
+let flavor = pizza = 'tasty' ? 'yum' : 'yuck';
+
+console.log(flavor);
+
+
+
+// Exercise 10: Boolean gates
+
+// Simulated language configuration (change this variable to test)
+const localLangConfig = null; // Change to 'es', 'fr', etc., or keep it null
+
+// Create a variable called LANG
+// Assign LANG the value of localLangConfig or 'en' as a default
+
+// Your code here
+const LANG = 'en' && localLangConfig;
+// Log the result
+console.log('Language setting:', LANG);
+
+// Simulated user theme preference (change this variable to test)
+const userSavedTheme = null; // Change to 'dark', 'contrast', etc., or keep it null
+
+// Create a variable called USER_THEME
+// Assign USER_THEME the value of userSavedTheme or 'light' as a default
+
+// Your code here
+const USER_THEME = userSavedTheme || 'dark';
+// Log the result
+console.log('User theme setting:', USER_THEME);
+
+
+
+// Exercise 11: Optional chaining
+
+// Now check for `cat.age` on `adventurer`. See how it errors out? Use optional chaining in a console.log that it returns undefined instead.
+
+const adventurer = {
+  name: "Alice",
+};
+
+let cat = adventurer.cat?.age; // Your code here
+
+console.log(cat);
